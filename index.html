@@ -6,9 +6,41 @@
    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>ADOM ZOE FOUNDATION</title>
     <link rel="icon" href="images/logo.png" type="image/jpeg">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="jquery.bsPhotoGallery.css" rel="stylesheet">
+    <script src="jquery.bsPhotoGallery.js"></script>	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
+<link href="jquery.bsPhotoGallery.css" rel="stylesheet">
+<script src="jquery.bsPhotoGallery.js"></script>	
+<script>
+  $(document).ready(function(){
+    $('ul.first').bsPhotoGallery({
+      "classes" : "col-xl-3 col-lg-2 col-md-4 col-sm-4",
+      "hasModal" : true,
+      "shortText" : false  
+    });
+  });
+</script>
 </head>
+<style>
+  /**************STYLES ONLY FOR DEMO PAGE**************/
+  @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+  body {
+    background:#ebebeb;
+  } 
+   .card-title a{
+     text-decoration: none;
+   }
+   .card-title a:hover{
+     text-decoration: none;
+   } 
+
+</style>
 <body>
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: #e3f2fd;">
@@ -18,10 +50,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="#"><i class="fa fa-home"> Home</i> <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#mission">Service</a>
           <a class="nav-item nav-link" href="#mission">Mission</a>
           <a class="nav-item nav-link " href="#mission">vission</a>
+          <a class="nav-item nav-link " href="#gallery">Gallery</a>
+          <!-- <a class="nav-item nav-link " href="#gallery">About Us</a> -->
+          
+          
         </div>
       </div>
     </nav>
@@ -29,22 +65,40 @@
    <div class="site-header w-100">
     <div id="carouselExample" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
-    <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExample" data-slide-to="1"></li>
-    <li data-target="#carouselExample" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
 </ol>
 <div class="carousel-inner">
     <div class="carousel-item active">
         <img src="images/4.jpg" alt="first slide" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WORKS</h5>
+          <p>Providing educational material for the future leaders</p>
+        </div>
     </div>
     <div class="carousel-item">
         <img src="images/3.jpg" alt="second slide" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WORKS</h5>
+          <p>Providing educational material for the future leaders</p>
+        </div>
     </div>
     <div class="carousel-item">
         <img src="images/2.jpg" alt="third slide" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WORKS</h5>
+          <p>Providing educational material for the future leaders</p>
+        </div>
     </div>
     <div class="carousel-item">
         <img src="images/p4.jpg" alt="four slide" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WORKS</h5>
+          <p>Providing educational material for the future leaders</p>
+        </div>
     </div>
 </div>
 
@@ -56,7 +110,7 @@
 <div class="home-content">
     <h2>ADOM ZOE</h2>
     <p>FOUNDATION</p>
-    <!-- <button type="button" class="btn btn-dark">Download</button> -->
+    <button type="button" class="btn btn-dark">Donate Now</button>
 </div>
 </div>
 <div class="container">
@@ -65,10 +119,11 @@
    
     <div class="card">
       <div class="card-header">
-        VISSION
+        
+        <a class="navbar-brand float-left" href="#"><img src="images/logo.png" alt="logo" width="50" height="50"/></a>
       </div>
       <div class="card-body">
-        <h5 class="card-title"></h5>
+        <h5 class="card-title">VISSION</h5>
     <p class="card-text">We envision a world of safety consciousness and individual motivation drive to develop opportunities. </p>
     </div>
   </div>
@@ -77,10 +132,10 @@
     
     <div class="card">
       <div class="card-header">
-        MISSION
+        <a class="navbar-brand float-left" href="#"><img src="images/logo.png" alt="logo" width="50" height="50"/></a>
       </div>
       <div class="card-body">
-        <h5 class="card-title"></h5>
+        <h5 class="card-title">MISSION</h5>
     <p class="card-text">To empower communities and create individual and organization safety awareness to promote optimal health, good environment and human security through training and education
       .</p>
     </div>
@@ -90,10 +145,10 @@
      
       <div class="card">
         <div class="card-header">
-          SERVICES
+          <a class="navbar-brand float-left" href="#"><img src="images/logo.png" alt="logo" width="50" height="50"/></a>
         </div>
         <div class="card-body">
-          <h5 class="card-title"></h5>
+          <h5 class="card-title">SERVICES</h5>
       <p class="card-text">
         <ol>
           <li>Health and Safety Advocacy</li>
@@ -109,29 +164,193 @@
       
       <div class="card">
         <div class="card-header">
-          VOLUNTEERS INFO
+          
+          <a class="navbar-brand float-left" href="#"><img src="images/logo.png" alt="logo" width="50" height="50"/></a>
         </div>
         <div class="card-body">
-          <h5 class="card-title"></h5>
+          <h5 class="card-title">VOLUNTEERS INFO</h5>
       <p class="card-text">Adom Zoe Foundation has volunteers in several regions of the country including Greater Accra, Western Region and Ashanti Region..</p>
     </div>
   </div>
 </div>
 </div>
 </div>
+<div class="container " id="gallery">
+ 
+  <div class="row" style="text-align:center; border-bottom:1px dashed #ccc;  padding:30px 0 20px 0; margin-bottom:40px;">
+      <div class="col-lg-12">
+      <h3 style="font-family:'Bree Serif', arial; font-weight:bold; font-size:30px;">
+          <a style="text-decoration:none; color:#666;" href="#" >Gallery<span style="color:red;">Lab</span></a>
+      </h3>
+      <!-- <p>Resize your browser and watch the gallery adapt to the view port size. Clicking on an image will activate the Modal. Click <strong><a style="color:red" href="http://michaelsoriano.com/create-a-responsive-photo-gallery-with-bootstrap-framework/">Here</a></strong> to go back to the tutorial</p> -->
+      </div>
+  </div>
+
+  <ul class="row first">
+      <li>
+          <img alt="Rocking the night away"  src="images/prj1.jpg">
+          <p>Consectetur adipiscing elit</p>
+      </li>
+      <li>
+          <img alt="Yellow sign"  src="images/prj.jpg">
+          <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Colors"  src="images/prj3.jfif">
+           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </li>
+      <li>
+          <img alt="Retro party"  src="images/prj4.jpg">
+          <p>Lorem, do eiusmod tempor incid Ut enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Technology soup"  src="images/prj5.jpg">
+          <p>Do eiusmod tempor</p>
+      </li>
+      <li>
+          <img alt="Legal docs"  src="images/prj6.jpg" data-bsp-large-src="http://demo.michaelsoriano.com/images/photodune-916206-legal-large.jpg">
+          <p>Eiusmod tempor enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Nature shot"  src="http://demo.michaelsoriano.com/images/photodune-1062948-nature-xs.jpg">
+          <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Kid with camera" src="http://demo.michaelsoriano.com/images/photodune-1471528-insant-camera-kid-xs.jpg" data-bsp-large-src="http://demo.michaelsoriano.com/images/photodune-1471528-insant-camera-kid-large.jpg">
+          <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Relax and Chill" src="http://demo.michaelsoriano.com/images/photodune-2255072-relaxed-man-xs.jpg">
+          <p>Eiusmod tempor enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Cool colors" src="http://demo.michaelsoriano.com/images/photodune-2360379-colors-xs.jpg">
+          <p>Consectetur adipiscing elit</p>
+      </li>
+      <li>
+          <img alt="Jump over"  src="http://demo.michaelsoriano.com/images/photodune-2360571-jump-xs.jpg">
+          <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </li>
+      <li>
+          <img alt="Culture business" src="http://demo.michaelsoriano.com/images/photodune-2361384-culture-for-business-xs.jpg">
+          <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </li>
+
+<li>
+    <img alt="Spaghetti bitch" src="http://demo.michaelsoriano.com/images/photodune-2441670-spaghetti-with-tuna-fish-and-parsley-s.jpg">
+    <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</li>
+<li>
+    <img alt="Budget this"  src="http://demo.michaelsoriano.com/images/photodune-2943363-budget-xs.jpg">
+    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</li>
+<li>
+    <img alt="Street art"  src="http://demo.michaelsoriano.com/images/photodune-3444921-street-art-xs.jpg">
+    <p>Consectetur adipiscing elit, re magna aliqua. Ut enim ad minim veniam</p>
+</li>
+
+
+<li>
+    <img alt="Insurance and stuff"  src="http://demo.michaelsoriano.com/images/photodune-3552322-insurance-xs.jpg">
+    <p>Ut enim ad minim veniam</p>
+</li>
+
+<li>
+    <img alt="Food Explosion"  src="http://demo.michaelsoriano.com/images/photodune-3807845-food-s.jpg">
+    <p>Eiusmod tempor enim ad minim veniam</p>
+</li>
+<li>
+    <img alt="Office worker sad" src="http://demo.michaelsoriano.com/images/photodune-3835655-down-office-worker-xs.jpg">
+    <p>Ut enim ad minim veniam</p>
+</li>
+
+<li>
+    <img alt="" src="http://demo.michaelsoriano.com/images/photodune-4619216-ui-control-knob-regulators-xs.jpg">
+    <p>Do eiusmod tempor</p>
+</li>
+
+<li>
+    <img alt="Health" src="http://demo.michaelsoriano.com/images/photodune-5771958-health-xs.jpg">
+    <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</li>
+<li>
+    <img  alt="Constant consecutuir" src="http://demo.michaelsoriano.com/images/photodune-268693-businesswoman-using-laptop-outdoors-xs.jpg"><!--no alt tag-->
+    <p>Consectetur adipiscing elit, re magna aliqua. Ut enim ad minim veniam</p>
+</li>
+<li>
+    <img alt="Search code" src="http://demo.michaelsoriano.com/images/photodune-352207-search-of-code-s.jpg">
+    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</li>
+
+<li>
+    <img alt="Pountac" src="http://demo.michaelsoriano.com/images/photodune-247190-secret-email-xs.jpg"><!--no alt tag, no text-->
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+</li>
+<li>
+  <img alt="Budget again" src="http://demo.michaelsoriano.com/images/photodune-2943363-budget-xs.jpg">
+  <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</li>
+<li>
+  <img alt="Some alt tag" src="http://demo.michaelsoriano.com/images/photodune-3444921-street-art-xs.jpg"><!--no alt-->
+  <p>Consectetur adipiscing elit, re magna aliqua. Ut enim ad minim veniam</p>
+</li>
+<li>
+  <img alt="Insurance boy"  src="http://demo.michaelsoriano.com/images/photodune-3552322-insurance-xs.jpg">
+  <p>Ut enim ad minim veniam</p>
+</li>
+<li>
+  <img alt="Food service"  src="http://demo.michaelsoriano.com/images/photodune-3807845-food-s.jpg">
+  <p>Eiusmod tempor enim ad minim veniam</p>
+</li>
+<li>
+  <img alt="Dopamine high"  src="http://demo.michaelsoriano.com/images/photodune-3835655-down-office-worker-xs.jpg">
+  <p>Ut enim ad minim veniam</p>
+</li>
+
+</ul>
+
+
+
+
+</div> <!-- /container -->
+
+
+
+
+
 <div class="card" style="background-color: #e3f2fd;">
   <div class="card-header">
     <h2 class="text-center">CONTACT US</h2>
   </div>
   <div class="card-body">
-    <h5 class="card-title text-center">info@adomzoefoundation.org</h5>
-    <h5 class="card-text text-center">Tel.</h5>
+    <h5 class="card-title text-center"><a class="fb-ic" href="#">
+      <i class="fa fa-envelope fa-md white-text mr-sm-5 mr-3 fa-2x">info@adomzoefoundation.org  </i>
+    </a>
+      <a class="fb-ic" href="#">
+      <i class="fa fa-facebook-f fa-md white-text mr-sm-5 mr-3 fa-2x"> </i>
+    </a>
+    <!-- Twitter -->
+    <a class="tw-ic" href="#">
+      <i class="fa fa-twitter fa-lg white-text mr-sm-5 mr-3 fa-2x"> </i>
+    </a>
+    <!--Instagram-->
+    <a class="ins-ic" href="#">
+      <i class="fa fa-instagram fa-lg white-text mr-sm-5 mr-3 fa-2x"> </i>
+    </a>
+    <a class="ins-ic" href="#">
+      <i class="fa fa-youtube-play fa-lg white-text mr-sm-5 mr-3 fa-2x"> </i>
+    </a>
+  </h5>
+    
+    <!-- <h5 class="card-text text-center float-right">Suport</h5><br> -->
+    <a href="#" class="text-center"><img src="images/pay.jpg" class="rounded float-right" height="50" width="150"/></a>
+    <a href="#" class="text-center"><img src="images/pay.png" class="rounded float-right" height="50" width="150"/></a>
    
   </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>
